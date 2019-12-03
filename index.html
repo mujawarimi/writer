@@ -27,7 +27,6 @@
 		line-height: 5px;
 		color: #282828;
 		}
-		body {background-color: #FFFFF8}
 		img{
 		    width: 100%;
 		    height: 100%;
@@ -171,12 +170,12 @@
 					float: left;
 				}
 
-				/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-				@media screen and (max-width:600px) {
-				  .column {
-				    width: 100%;
-				  }
-				}
+				@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			  body {
+			    background: #FFFFF8;
+			    width: 100%;
+			  }
+			}
 	</style>
 	</head>
 	<body>
@@ -253,7 +252,7 @@
 
 <div class="column_side">
 	<div id="image">
-		<img src="profilepic.JPG" alt="Imran_Mujawar">
+		<img src="profilepic.JPG" alt="Imran Mujawar">
 	</div>
 	<p>Stuf about me. blah blah blah hatever</p>
 </div>
